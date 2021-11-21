@@ -1,0 +1,203 @@
+
+body {
+  margin: 0px;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+header {
+  height: 70px;
+  box-shadow: 0px -20px 20px 9px black;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: space-between;
+  color: #777777;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+#lovt-title {
+  font-size: 45px;
+}
+
+#lovt-subtitle {
+  font-size: 16px;
+  max-width: 75px;
+  margin-left: 5px;
+}
+
+#header-button {
+  width: 28px;
+}
+
+#primeira-secao img {
+  width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.card {
+  width: 45%;
+  background-color: #EEEEEE;
+  color: #888888;
+}
+
+.card img {
+  width: 100%
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+.card-title {
+  font-size: 50px;
+  margin: 0px;
+}
+
+.card-badge {
+  font-size: 34px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 35px;
+  color: white;
+}
+
+.orange-badge {
+  background-color: #DC9730;
+}
+
+.green-badge {
+  background-color: #51D275;
+}
+
+.card-title-container {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+#segunda-secao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+/* Aqui aplica algumas regras padrão que serão substituidas 
+  abaixo pela especificidade do css, mais detalhes em: 
+  https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+#terceira-secao {
+  margin-top: 65px;
+  font-size: 40px;
+  color: #888888;
+  text-align: center;
+}
+
+/* Aplicamos as regra padrão do background e outras à todas as divs filhas da terceira seção */
+#terceira-secao div {
+  height: 130px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+/* Aplica um leve sombrado aos textos contidos nas divs da terceira seção para 
+  deixar eles mais destacados em relação ao background */
+#terceira-secao div span {
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+/* Agora só aplicamos as imagens especificas de cada uma */
+#industrial {
+  background-image: url('../img/industrial.jfif');
+}
+#modern {
+  background-image: url('../img/modern.jfif');
+}
+#classic {
+  background-image: url('../img/classic.jfif');
+}
+
+footer {
+  margin-top: 65px;
+  background-color: #333333;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+#map-container {
+  width: 45%;
+}
+
+#footer-info {
+  width: 35%;
+  font-size: 18px;
+}
+
+
+#map-image {
+  width: 100%;
+  /* Essa propriedade coloca a borda arredondada na imagem */
+  border-radius: 35px;
+}
+
+.rede-social {
+  width: 25px;
+  margin-right: 20px;
+}
+
+@media(max-width: 800px){
+  main{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(max-width: 800px){
+  .card{
+    width: 100%;
+    margin: 10px;
+  }
+  #segunda-secao{
+    flex-direction: column;
+  }
+  
+  footer{
+  flex-direction: column;
+  }
+  #map-container{
+    width: 100%;
+  }
+  #footer-info{
+    width: 100%;
+    text-align: center;
+  }
+}
